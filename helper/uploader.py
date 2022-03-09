@@ -35,7 +35,7 @@ class Upload:
         def uploadingProgress(current, total):
             percentFraction = current/total
             progress = int(18*percentFraction)
-            progress_bar = '■' * progress + '□' * (18 - progress)
+            progress_bar = '▬' * progress + '▭' * (18 - progress)
             percentage = int((percentFraction)*100)
             currentMB = (current/1024)/1024
             completed = int(currentMB)
